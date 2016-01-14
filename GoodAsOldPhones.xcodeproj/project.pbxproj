@@ -13,6 +13,7 @@
 		FEFC2DA71C46E02300EB397E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFC2DA51C46E02300EB397E /* LaunchScreen.storyboard */; };
 		FEFC2DAF1C48003600EB397E /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC2DAE1C48003600EB397E /* ProductViewController.swift */; };
 		FEFC2DB11C48231700EB397E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC2DB01C48231700EB397E /* ContactViewController.swift */; };
+		FEFC2DB31C482BE800EB397E /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC2DB21C482BE800EB397E /* ProductsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FEFC2DA81C46E02300EB397E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEFC2DAE1C48003600EB397E /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		FEFC2DB01C48231700EB397E /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		FEFC2DB21C482BE800EB397E /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FEFC2DA81C46E02300EB397E /* Info.plist */,
 				FEFC2DAE1C48003600EB397E /* ProductViewController.swift */,
 				FEFC2DB01C48231700EB397E /* ContactViewController.swift */,
+				FEFC2DB21C482BE800EB397E /* ProductsTableViewController.swift */,
 			);
 			path = GoodAsOldPhones;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEFC2DAF1C48003600EB397E /* ProductViewController.swift in Sources */,
+				FEFC2DB31C482BE800EB397E /* ProductsTableViewController.swift in Sources */,
 				FEFC2D9D1C46E02300EB397E /* AppDelegate.swift in Sources */,
 				FEFC2DB11C48231700EB397E /* ContactViewController.swift in Sources */,
 			);
