@@ -9,18 +9,20 @@
 import UIKit
 
 class ProductViewController: UIViewController {
-
+    
+    var productName: String?
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        productNameLabel.text = "1937 Desk Phone"
+        productNameLabel.text = productName
         productImageView.image = UIImage(named: "phone-fullscreen3")
     }
     
     @IBAction func addToCartPressed(sender: AnyObject) {
         print("Button Tapped")
     }
+   
 }
