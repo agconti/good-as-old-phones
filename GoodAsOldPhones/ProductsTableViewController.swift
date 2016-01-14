@@ -23,6 +23,9 @@ class ProductsTableViewController: UITableViewController {
     
     override func tableView(tabelView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(productCellIdentifier, forIndexPath: indexPath)
+        
+        cell.textLabel?.text = "Hello World!"
+        cell.imageView?.image = UIImage(named: "image-cell1")
         return cell
     }
     
