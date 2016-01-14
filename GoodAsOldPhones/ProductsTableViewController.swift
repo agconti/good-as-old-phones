@@ -13,18 +13,33 @@ class ProductsTableViewController: UITableViewController {
     let productCellIdentifier: String = "ProductCell"
     let numVisibleCells: Int = 5
     
+    var productNames: [String]?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        productNames = [ "1927 Bell Phone"
+                       , "1950 Office Phone"
+                       , "1980 Car Phone"
+                       , "1940 Military Phone"
+                       ]
     }
     
     override func tableView(tabelView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numVisibleCells
+        
+        if let pNames = productNames {
+            return pNames.count
+        }
+        
+        return 0
     }
     
     override func tableView(tabelView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(productCellIdentifier, forIndexPath: indexPath)
+        let productName = productNames?[indexPath.row]
         
-        cell.textLabel?.text = "Hello World!"
+        cell.textLabel?.text = productName
         cell.imageView?.image = UIImage(named: "image-cell1")
         return cell
     }
