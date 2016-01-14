@@ -14,6 +14,7 @@
 		FEFC2DAF1C48003600EB397E /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC2DAE1C48003600EB397E /* ProductViewController.swift */; };
 		FEFC2DB11C48231700EB397E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC2DB01C48231700EB397E /* ContactViewController.swift */; };
 		FEFC2DB31C482BE800EB397E /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC2DB21C482BE800EB397E /* ProductsTableViewController.swift */; };
+		FEFC2DB51C485D0500EB397E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC2DB41C485D0500EB397E /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FEFC2DAE1C48003600EB397E /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		FEFC2DB01C48231700EB397E /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		FEFC2DB21C482BE800EB397E /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		FEFC2DB41C485D0500EB397E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				FEFC2DAE1C48003600EB397E /* ProductViewController.swift */,
 				FEFC2DB01C48231700EB397E /* ContactViewController.swift */,
 				FEFC2DB21C482BE800EB397E /* ProductsTableViewController.swift */,
+				FEFC2DB41C485D0500EB397E /* Product.swift */,
 			);
 			path = GoodAsOldPhones;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				FEFC2DAF1C48003600EB397E /* ProductViewController.swift in Sources */,
 				FEFC2DB31C482BE800EB397E /* ProductsTableViewController.swift in Sources */,
+				FEFC2DB51C485D0500EB397E /* Product.swift in Sources */,
 				FEFC2D9D1C46E02300EB397E /* AppDelegate.swift in Sources */,
 				FEFC2DB11C48231700EB397E /* ContactViewController.swift in Sources */,
 			);

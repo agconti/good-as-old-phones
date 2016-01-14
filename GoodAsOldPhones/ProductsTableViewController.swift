@@ -13,23 +13,23 @@ class ProductsTableViewController: UITableViewController {
     let productCellIdentifier: String = "ProductCell"
     let numVisibleCells: Int = 5
     
-    var productNames: [String]?
+    var products: [Product]?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        productNames = [ "1927 Bell Phone"
-                       , "1950 Office Phone"
-                       , "1980 Car Phone"
-                       , "1940 Military Phone"
-                       ]
+        products = [ Product(name: "1927 Hand Dial Phone", productImage:  "phone-fullscreen1", cellImage: "image-cell1")
+                   , Product(name: "1950 Office Phone", productImage:  "phone-fullscreen2", cellImage: "image-cell2")
+                   , Product(name: "1980 Car Phone", productImage:  "phone-fullscreen3", cellImage: "image-cell3")
+                   , Product(name: "1940 Military Phone", productImage:  "phone-fullscreen4", cellImage: "image-cell4")
+                   ]
     }
     
     override func tableView(tabelView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if let productNames = productNames {
-            return productNames.count
+        if let products = products {
+            return products.count
         }
         
         return 0
@@ -37,21 +37,27 @@ class ProductsTableViewController: UITableViewController {
     
     override func tableView(tabelView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(productCellIdentifier, forIndexPath: indexPath)
-        let productName = productNames?[indexPath.row]
+        let product = products?[indexPath.row]
         
-        cell.textLabel?.text = productName
-        cell.imageView?.image = UIImage(named: "image-cell1")
+        cell.textLabel?.text = product?.name
+        
+        if let cellImage = product?.cellImage{
+            cell.imageView?.image = UIImage(named: cellImage)
+        }
+        
         return cell
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowProduct" {
             guard let vc = segue.destinationViewController as? ProductViewController,
-                  let cell = sender as? UITableViewCell else {
+                  let cell = sender as? UITableViewCell,
+                  let indexPath = tableView.indexPathForCell(cell) else {
                 return
             }
             
-            vc.productName = cell.textLabel?.text
+            
+            vc.product = products?[indexPath.row]
             
         }
     }
