@@ -28,8 +28,8 @@ class ProductsTableViewController: UITableViewController {
     
     override func tableView(tabelView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if let pNames = productNames {
-            return pNames.count
+        if let productNames = productNames {
+            return productNames.count
         }
         
         return 0
