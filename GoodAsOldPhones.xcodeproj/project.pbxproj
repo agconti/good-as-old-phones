@@ -297,6 +297,7 @@
 				FEFC2DAD1C46E02300EB397E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
